@@ -1,9 +1,10 @@
 import React from "react";
-import { useLocalStorage } from "./useLocalStorage"
+import  useLocalStorage  from "./useLocalStorage"
 
 const useDarkMode = () => {
-   const [someValue, setSomeValue] = useLocalStorage("name")
-    
+   const [someValue, setSomeValue] = useLocalStorage('darkMode');
+  
+   return [someValue, setSomeValue]
 
 }
 
